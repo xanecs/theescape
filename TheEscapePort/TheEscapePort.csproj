@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{052AB3CF-F13D-4614-B745-DF6CD267FBAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TheEscapePort</RootNamespace>
+    <AssemblyName>TheEscapePort</AssemblyName>
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Basic.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Debug\BoundingBoxRenderer.cs" />
+    <Compile Include="Debug\DebugHelper.cs" />
+    <Compile Include="Debug\FPS.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\Block\DoorBlock.cs" />
+    <Compile Include="Entity\Block\FloorBlock.cs" />
+    <Compile Include="Entity\Block\NullBlock.cs" />
+    <Compile Include="Entity\Block\WallBlock.cs" />
+    <Compile Include="Entity\Block\WallBlockBlood.cs" />
+    <Compile Include="Entity\Item\Key.cs" />
+    <Compile Include="Entity\Sprites\GridBlock.cs" />
+    <Compile Include="Gui\GUI.cs" />
+    <Compile Include="Gui\GUIElement.cs" />
+    <Compile Include="Gui\Elements\Bar.cs" />
+    <Compile Include="Gui\Elements\BloodyScreen.cs" />
+    <Compile Include="Gui\Elements\DebugDisplay.cs" />
+    <Compile Include="Gui\Elements\GuiKey.cs" />
+    <Compile Include="Gui\Elements\GuiPicture.cs" />
+    <Compile Include="Gui\Elements\Subtitle.cs" />
+    <Compile Include="Gui\Elements\fade.cs" />
+    <Compile Include="Resources\RenderModel.cs" />
+    <Compile Include="Resources\Sounds.cs" />
+    <Compile Include="Resources\Textures.cs" />
+    <Compile Include="Resources\Models\BlockModel.cs" />
+    <Compile Include="Resources\Models\FloorFace.cs" />
+    <Compile Include="Resources\Models\ModelRenderer.cs" />
+    <Compile Include="Resources\Models\SpriteFace.cs" />
+    <Compile Include="Resources\Models\TriangleModel.cs" />
+    <Compile Include="Resources\Models\WaterFace.cs" />
+    <Compile Include="ScreenManager\Credits.cs" />
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\Screen.cs" />
+    <Compile Include="ScreenManager\Menu\MenuBackground.cs" />
+    <Compile Include="ScreenManager\Menu\MenuBox.cs" />
+    <Compile Include="ScreenManager\Menu\MenuButton.cs" />
+    <Compile Include="ScreenManager\Menu\MenuCheckBox.cs" />
+    <Compile Include="ScreenManager\Menu\MenuComboBox.cs" />
+    <Compile Include="ScreenManager\Menu\MenuElement.cs" />
+    <Compile Include="ScreenManager\Menu\MenuLabel.cs" />
+    <Compile Include="ScreenManager\Menu\MenuSlider.cs" />
+    <Compile Include="ScreenManager\Menu\MenuSprite.cs" />
+    <Compile Include="ScreenManager\Menu\Screens\MenuScreen.cs" />
+    <Compile Include="ScreenManager\Menu\Screens\OptionsScreen.cs" />
+    <Compile Include="World\Ceiling.cs" />
+    <Compile Include="World\Floor.cs" />
+    <Compile Include="World\Level.cs" />
+    <Compile Include="World\LevelManager.cs" />
+    <Compile Include="World\Terrain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.png" />
+    <None Include="Entity\.DS_Store" />
+    <None Include="Gui\.DS_Store" />
+    <None Include="Resources\.DS_Store" />
+    <None Include="ScreenManager\.DS_Store" />
+    <None Include="ScreenManager\Menu\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MonoGame.Framework.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libopenal.1.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libSDL2-2.0.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+</Project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>/Volumes/vault/leon/Public/TheEscapePort/TheEscapePort/Content/Sounds/background.mp3</SourceFile>
+  <SourceTime>2016-08-14T12:10:26+02:00</SourceTime>
+  <DestFile>/Volumes/vault/leon/Public/TheEscapePort/TheEscapePort/Content/bin/DesktopGL/Sounds/background.xnb</DestFile>
+  <DestTime>2016-08-17T22:35:46+02:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2016-08-14T23:27:06+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2016-08-14T23:27:06+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>/Volumes/vault/leon/Public/TheEscapePort/TheEscapePort/Content/bin/DesktopGL/Sounds/background.ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

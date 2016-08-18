@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>/Volumes/vault/leon/Public/TheEscapePort/TheEscapePort/Content/Subtitle.spritefont</SourceFile>
+  <SourceTime>2016-08-14T23:23:34+02:00</SourceTime>
+  <DestFile>/Volumes/vault/leon/Public/TheEscapePort/TheEscapePort/Content/bin/DesktopGL/Subtitle.xnb</DestFile>
+  <DestTime>2016-08-17T23:13:42+02:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2016-08-14T23:27:06+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2016-08-14T23:27:06+02:00</ProcessorTime>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

@@ -1,0 +1,55 @@
+﻿<Properties StartupItem="TheEscapePort/TheEscapePort.csproj">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="TheEscapePort/Game1.cs" Line="45" Column="51" />
+      <File FileName="TheEscapePort/Basic.cs" Line="57" Column="46" />
+      <File FileName="TheEscapePort/Camera.cs" Line="61" Column="30" />
+      <File FileName="TheEscapePort/Resources/VideoPlayer.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/Program.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/ScreenManager/RenderScene.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/Debug/DebugHelper.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/Resources/Textures.cs" Line="28" Column="25" />
+      <File FileName="TheEscapePort/Resources/Sounds.cs" Line="52" Column="13" />
+      <File FileName="TheEscapePort/Player.cs" Line="90" Column="33" />
+      <File FileName="TheEscapePort/World/LevelManager.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/World/Level.cs" Line="94" Column="29" />
+      <File FileName="TheEscapePort/World/Ceiling.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/World/Floor.cs" Line="32" Column="1" />
+      <File FileName="TheEscapePort/ScreenManager/Menu/MenuSlider.cs" Line="1" Column="1" />
+      <File FileName="TheEscapePort/ScreenManager/Menu/Screens/MenuScreen.cs" Line="73" Column="22" />
+      <File FileName="TheEscapePort/Gui/Elements/fade.cs" Line="44" Column="28" />
+      <File FileName="TheEscapePort/Gui/GUI.cs" Line="28" Column="161" />
+      <File FileName="TheEscapePort/Gui/Elements/BloodyScreen.cs" Line="65" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TheEscapePort" expanded="True">
+            <Node name="TheEscapePort" expanded="True">
+              <Node name="Content" expanded="True">
+                <Node name="Content.mgcb" selected="True" />
+              </Node>
+              <Node name="Entity" expanded="True" />
+              <Node name="Gui" expanded="True">
+                <Node name="Elements" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True" />
+              <Node name="ScreenManager" expanded="True">
+                <Node name="Menu" expanded="True">
+                  <Node name="Screens" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="World" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TheEscapePort PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

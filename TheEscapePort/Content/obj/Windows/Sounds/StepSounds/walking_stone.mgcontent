@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>E:/TheEscapePort/TheEscapePort/Content/Sounds/StepSounds/walking_stone.wav</SourceFile>
+  <SourceTime>2016-08-14T12:12:48+02:00</SourceTime>
+  <DestFile>E:/TheEscapePort/TheEscapePort/Content/bin/Windows/Sounds/StepSounds/walking_stone.xnb</DestFile>
+  <DestTime>2016-08-14T23:33:07+02:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2016-03-30T08:36:08+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
