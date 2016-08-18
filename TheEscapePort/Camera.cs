@@ -131,11 +131,11 @@ namespace TheEscape
             running = 0.0f;
             if (GameScreen.player.run)
             {
-                running += (float)((Math.Sin(walk_animation) + 0) * 0.01);
+                running += (float)((Math.Sin(walk_animation) + 0) * 0.03);
             }
-            else if (v.X != 0|| v.Z != 0)
+            else if (v.X + v.Z != 0)
             {
-                running += (float)((Math.Sin(walk_animation) + 0) * 0.0015);
+                running += (float)((Math.Sin(walk_animation) + 0) * 0.02);
             }
 
             if (!contains(new Vector3(GameScreen.player.position.X + forward.X, GameScreen.player.position.Y, GameScreen.player.position.Z)))
